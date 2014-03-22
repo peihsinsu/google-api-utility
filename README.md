@@ -1,7 +1,10 @@
-google-api-utility
-----
+# google-api-utility
 
-# Install 
+This is a auth api wrapper (we use gapitoken module) and add a request method for api call. It use service account for authenticate, and persistance the key in cache and file. 
+
+We still not implement the refresh token, will be implement next release.
+
+## Install 
 
 ```
 npm install google-api-utility
