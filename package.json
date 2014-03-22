@@ -1,6 +1,6 @@
 {
   "name": "google-api-utility",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "dependencies": {
     "gapitoken": "~0.1.0",
     "request": "~2.27.0",
