@@ -7,6 +7,20 @@ google-api-utility
 npm install google-api-utility
 ```
 
+# Apply service account
+
+Follow the doc: http://gappsnews.blogspot.tw/2013/10/connect-cloud-platform-bigquery-using.html
+
+# Convert p12 key
+
+From admin console, create a service account, save the client_secrets.json and it's key
+ex: Translate p12 to pem
+
+```
+openssl pkcs12 -in privatekey.p12 -out privatekey.pem -nocerts
+openssl rsa -in privatekey.pem -out key.pem
+```
+
 # Use
 
 ```
@@ -28,3 +42,7 @@ request({
 });
 
 ```
+
+# Credit
+
+* https://github.com/peihsinsu/bigquery
