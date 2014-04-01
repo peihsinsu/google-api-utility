@@ -30,7 +30,9 @@ You need to initial with auth.init() to put the scope, client_secret, privatekey
 
 ```
 var auth = require('google-api-utility')
-  , request = auth.request;
+  , request = auth.request
+  , util = require('util')
+  , project = 'your-project-id';
 
 auth.init({
   scope: 'https://www.googleapis.com/auth/bigquery https://www.googleapis.com/auth/cloud-platform',
@@ -44,7 +46,8 @@ request({
     url: util.format(bqurl, project),
     method: 'GET'
 }, function(err, req, doc){
-  
+  if(err) console.log(err);
+	console.log(doc);  
 });
 
 ```
