@@ -22,6 +22,10 @@ ex: Translate p12 to pem
 ```
 openssl pkcs12 -in privatekey.p12 -out privatekey.pem -nocerts
 openssl rsa -in privatekey.pem -out key.pem
+
+or
+
+openssl pkcs12 -in privatekey.p12 -nodes -nocerts > key.pem
 ```
 
 ## Use for Google API request
@@ -37,7 +41,6 @@ var auth = require('google-api-utility')
 auth.init({
   scope: 'https://www.googleapis.com/auth/bigquery https://www.googleapis.com/auth/cloud-platform',
   client_secret: '/path-to-client_secret.json',
-  privatekey_pem: '/path-to-privatekey.pem',
   key_pem: '/path-to-key.pem'
 });
 
