@@ -55,6 +55,17 @@ request({
 
 ```
 
+## Request timeout setting
+
+Use timeout parameter in init function, and will be set in request timeout.
+
+```
+auth.init({
+  ...,
+  timeout: 1000
+})
+```
+
 ## Credit
 
 The module bellow are my implements use this lib.
