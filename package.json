@@ -1,9 +1,9 @@
 {
   "name": "google-api-utility",
   "version": "0.0.6",
-  repository:
-   { type: 'git',
-     url: 'https://github.com/peihsinsu/google-api-utility.git' },
+  "repository":
+   { "type": "git",
+     "url": "https://github.com/peihsinsu/google-api-utility.git" },
   "dependencies": {
     "gapitoken": "~0.1.0",
     "request": "~2.27.0",
