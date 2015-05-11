@@ -55,6 +55,18 @@ request({
 
 ```
 
+About 2015Q1 end, google start to deprecate the client_secret file download. You can change the init method like this:
+
+```
+auth.init({
+  scope: 'https://www.googleapis.com/auth/bigquery https://www.googleapis.com/auth/cloud-platform',
+  client_email: 'your-client-email@developer.gserviceaccount.com',
+  key_pem: '/path-to-key.pem'
+});
+```
+
+The client_email can be find in project credential page. (Page url like: https://console.developers.google.com/project/[YOUR-PROJECT-ID]/apiui/credential)
+
 ## Request timeout setting
 
 Use timeout parameter in init function, and will be set in request timeout.
