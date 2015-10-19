@@ -67,6 +67,17 @@ auth.init({
 
 The client_email can be find in project credential page. (Page url like: https://console.developers.google.com/project/[YOUR-PROJECT-ID]/apiui/credential)
 
+## Now support json secret file setting
+
+Because GCP currently have json secret file. We currently support to initial it using json file:
+
+```
+auth.init({
+  scope: 'https://www.googleapis.com/auth/devstorage.full_control https://www.googleapis.com/auth/devstorage.read_write https://www.googleapis.com/auth/cloud-platform',
+  json_file: '/path/to/your-file.json'
+});
+```
+
 ## Request timeout setting
 
 Use timeout parameter in init function, and will be set in request timeout.
