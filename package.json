@@ -1,6 +1,6 @@
 {
   "name": "google-api-utility",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "repository": {
     "type": "git",
     "url": "https://github.com/peihsinsu/google-api-utility.git"
@@ -8,7 +8,8 @@
   "dependencies": {
     "gapitoken": "~0.1.0",
     "node-rsa": "^0.2.26",
-    "nodeutil": "0.0.47",
-    "request": "~2.27.0"
+    "nodeutil": "*",
+    "request": "~2.27.0",
+    "underscore": "^1.8.3"
   }
 }
